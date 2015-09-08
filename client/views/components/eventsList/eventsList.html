@@ -1,0 +1,29 @@
+<template name="eventsList">
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5>Events List</h5>
+            <div class="ibox-tools">
+                <!--<span class="label label-warning-light pull-right">10 Messages</span>-->
+            </div>
+        </div>
+        <div class="ibox-content">
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>                            
+                            <th>Name</th>
+                            <th>Dated At</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each items}}
+                            {{>eventsListItem}}                             
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</template>
